@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import {EventApiService} from '../../../registration/services/event-api.service';
 import {Events} from '../../../registration/model/events.entity';
-import {EventSummaryComponent} from '../../../registration/components/event-summary/event-summary.component';
+
 import {EventGridComponent} from '../../../registration/components/event-grid/event-grid.component';
 import {ToolbarComponent} from '../../components/toolbar/toolbar.component';
 
@@ -10,7 +10,7 @@ import {ToolbarComponent} from '../../components/toolbar/toolbar.component';
   selector: 'app-home',
   standalone: true,
   imports: [
-    ToolbarComponent,EventGridComponent,EventSummaryComponent
+    ToolbarComponent,EventGridComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
